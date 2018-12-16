@@ -9,12 +9,12 @@ function changeTime() {
   var seconds = uptime - (hours * 3600) - (minutes * 60);
 
   if (hours > 0) {
-    console.log('Uptime ~', hours.toFixed(0), ' hours ' + minutes.toFixed(0), ' minutes ' + seconds.toFixed(0), ' seconds');
+    console.log('Uptime ~'.green, hours.toFixed(0), ' hours ' + minutes.toFixed(0), ' minutes ' + seconds.toFixed(0), ' seconds');
   } else if (minutes > 0) {
-    console.log('Uptime ~', minutes.toFixed(0), ' minutes ' + seconds.toFixed(0), ' seconds');
+    console.log('Uptime ~'.green, minutes.toFixed(0), ' minutes ' + seconds.toFixed(0), ' seconds');
 
   } else if (seconds > 0) {
-    console.log('Uptime ~', seconds.toFixed(0), ' seconds');
+    console.log('Uptime ~'.green, seconds.toFixed(0), ' seconds');
   }
 }
 
